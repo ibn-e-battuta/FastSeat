@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\FastSeat.Common.Presentation\FastSeat.Common.Presentation.csproj" />
+    <ProjectReference Include="..\..\Events\FastSeat.Modules.Events.IntegrationEvents\FastSeat.Modules.Events.IntegrationEvents.csproj" />
+    <ProjectReference Include="..\..\Users\FastSeat.Modules.Users.IntegrationEvents\FastSeat.Modules.Users.IntegrationEvents.csproj" />
+    <ProjectReference Include="..\FastSeat.Modules.Ticketing.Application\FastSeat.Modules.Ticketing.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="SonarAnalyzer.CSharp" Version="9.30.0.95878">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

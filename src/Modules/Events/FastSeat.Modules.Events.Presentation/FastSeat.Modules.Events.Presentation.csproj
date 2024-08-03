@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="8.2.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\FastSeat.Common.Presentation\FastSeat.Common.Presentation.csproj" />
+    <ProjectReference Include="..\..\Ticketing\FastSeat.Modules.Ticketing.IntegrationEvents\FastSeat.Modules.Ticketing.IntegrationEvents.csproj" />
+    <ProjectReference Include="..\FastSeat.Modules.Events.Application\FastSeat.Modules.Events.Application.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="SonarAnalyzer.CSharp" Version="9.30.0.95878">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>
